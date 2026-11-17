@@ -15,7 +15,7 @@ int main(void)
     ssize_t result;
     size_t i;
 
-    const char message[] = "Hello, Solaris! I have 3 Cats and 2 Dogs.\n";
+    const char message[] = "Hello!!! My name is Nika, im 18 y.o.\n";
 
     // создание канала для передачи данных между процессами
     if (pipe(channel) == -1) {
