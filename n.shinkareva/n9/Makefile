@@ -1,12 +1,12 @@
-all: main
+all: main no_wait
 
-.PHONY: all clean run
+.PHONY: all clean
 
 main: main.c
-	gcc main.c -o main -Wall -pedantic -Wextra
+	gcc main.c -o main -Wall -Wextra -pedantic -std=c99
 
-run: main
-	./main
+no_wait: no_wait.c
+	gcc no_wait.c -o no_wait -Wall -Wextra -pedantic -std=c99
 
 clean:
-	rm -f main
+	rm -f main no_wait
